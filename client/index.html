@@ -1,21 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>H 1.0 Pro</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>H 1.0 Pro</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background:
+          radial-gradient(circle at top, rgba(255, 215, 0, 0.12), transparent 34%),
+          linear-gradient(180deg, #050505 0%, #000000 62%, #020202 100%);
+        color: #ffffff;
+      }
+
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      #root {
+        min-height: 100vh;
+        background: transparent;
+      }
+
+      .boot-shell {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(circle at top, rgba(255, 215, 0, 0.12), transparent 34%),
+          linear-gradient(180deg, #050505 0%, #000000 62%, #020202 100%);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .boot-shell::before {
+        content: "H 1.0 PRO";
+        color: rgba(255, 215, 0, 0.92);
+        font-size: 1.1rem;
+        letter-spacing: 0.35rem;
+        text-transform: uppercase;
+        opacity: 0.88;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="boot-shell" aria-hidden="true"></div>
     <div id="root"></div>
+    <script>
+      document.documentElement.style.backgroundColor = "#000000";
+      document.body.style.backgroundColor = "#000000";
+    </script>
     <script type="module" src="/src/main.tsx"></script>
     <script
       defer
