@@ -50,3 +50,4 @@
 - [ ] 使用 skill-creator 将 H 1.0 Pro 的页面真实对话自测、结果记录、代码复核与交付汇报流程封装为可复用技能，并完成验证与交付。
 - [x] 核查当前 H 1.0 Pro 变更是否已上传到 GitHub，并确认 Telegram 相关代码、文案或交付是否已同步更新。
 - [ ] 将 H 1.0 Pro 当前最新改动同步到 GitHub 目标仓库，并更新 Telegram 相关运行版本到最新代码后完成验证。
+- [ ] 将 Telegram Mini App 入口改为 GitHub 仓库中的 .html 页面链接，并完成配置与验证。
