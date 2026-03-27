@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-telegram-bot[ext]
+python-dotenv
+requests
+httpx
+pydantic
+pydantic-settings
+# Note: As of my last update, a dedicated okx-v5-python SDK might exist.
+# If not, we will build a client using requests/httpx.
